@@ -1,11 +1,16 @@
 body{
-    margin:0;
+    margin: 0;
+    padding: 0;
     background: white;
     font-family: 'Ubuntu', sans-serif;
 }
+.margin{
+    margin-left:9%;
+    margin-right:9%;
+}
 /*Nav-bar below*/
 nav{
-    padding:30px;
+    padding-top:30px;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -15,20 +20,16 @@ nav{
     display:flex;
 
 }
-.left-corner{
-    padding-left: 60px;
-}
+
 nav a{
     text-decoration: none;
     color:black;
-    padding-right: 50px;
-    padding-top: 20px;
+    padding-right: 40%;
     font-size: 20px;
 }
 /*Main below*/
 .intro{
     padding-top: 50px;
-    padding-left:130px;
     max-width: 40%;
 }
 .welcome{
@@ -64,6 +65,7 @@ nav a{
     display:flex;
     align-items: center;
     justify-content: center;
+    flex-wrap:wrap;
 }
 .tech-element{
     display:flex;
@@ -111,6 +113,7 @@ nav a{
     height: 200px;
     background-color: white;
     transform: skewY(15deg);
+    object-fit: cover;
 
 }
 
@@ -147,31 +150,30 @@ nav a{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-right:5%;
 }
 .projects-text{
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: 500;
-    padding-right:55px;
 }
+
 .projects{
+    padding-top:20px;
     display:grid;
     grid-template-columns: auto auto;
     grid-column-start: auto;
-    padding:50px;
-    grid-gap:40px;
+    gap:40px;
+    width:100%;
 }
 .project{
     display:flex;
     flex-direction: column;
     background-color:rgb(245, 240, 240);
-    width:550px; /*550px*/
-    height:170px;
-    border-radius: 20px;
+    width:100%; /*550px*/
+    height:100%;
+    border-radius: 25px;
+    box-sizing: border-box;
     padding:20px;
-    margin-right:5px;
-    margin-left:5px;
     justify-content: space-between;
 }
 .project-heading{
@@ -180,12 +182,14 @@ nav a{
 }
 .project-row1{
     display:flex;
+    padding-bottom:25px;
     align-items: top;
     justify-content: space-between;
     color: rgb(37, 36, 36);
 }
 .project-row2{
     font-size: 20px;
+    padding-bottom:35px;
     color: grey;
     width:60%;
 }
@@ -193,6 +197,7 @@ nav a{
     color:black;
     font-weight: 400;
     font-size:15px;
+    padding-bottom:5px;
 
 }
 
@@ -201,7 +206,8 @@ nav a{
     display:flex;
     justify-content: space-evenly;
     text-decoration: none;
-    margin: 35px;
+    padding-top:30px;
+    flex-wrap: wrap;
 }
 .button1{
     display:inline-block;
@@ -221,6 +227,10 @@ nav a{
     background-color:black
 }
 /*Footer below*/
+footer{
+    margin:0;
+    width:100%;
+}
 .footer-wrapper{
     display:flex;
     width:100%;
@@ -234,6 +244,8 @@ nav a{
 }
 .footer-elements {
     display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .footer-element{
     display:flex;
@@ -261,12 +273,49 @@ nav a{
 /* TESTING WIDTH */
 
 /*Mobile*/
-
 @media screen and (max-width: 480px){
-
+    
     /*Will do it later*/
+    .pictures{
+        display:none;
+    }
 
+    .projects{
+        display:block;
+    }
+
+    .project{
+        margin-top:20px;
+    }
+
+    .intro{
+        max-width: 100%;
+    }
+    
+    .tech-element{
+        padding-right:8px;
+        padding-left:8px;
+    }
+    nav a{
+        padding-right:0%;
+        padding-left:10%;
+    }
+    .right-corner{
+        justify-content: flex-end;
+    }
+    .right-corner a{
+        text-align: center;
+
+    }
+    .left-corner{
+        font-size: 10px!important;
+    }
+    .intro span{
+        white-space:pre-wrap;
+    
+    }
 }
+
 
 
 
