@@ -273,7 +273,7 @@ footer{
 /* TESTING WIDTH */
 
 /*Mobile*/
-@media screen and (max-width: 480px){
+@media screen and (max-width: 660px){
     
     /*Will do it later*/
     .pictures{
@@ -313,6 +313,9 @@ footer{
     .intro span{
         white-space:pre-wrap;
     
+    }
+    .projects-wrapper{
+        align-items:flex-start;
     }
 }
 
