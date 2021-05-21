@@ -268,9 +268,9 @@ footer{
     padding-left:10px
 
 }
-
-
 /* TESTING WIDTH */
+
+
 
 /*Mobile*/
 @media screen and (max-width: 660px){
@@ -282,8 +282,11 @@ footer{
 
     .projects{
         display:block;
+        padding-top: 5px !important;
     }
-
+    .projects-heading{
+        padding-top:40px; 
+    }
     .project{
         margin-top:20px;
     }
